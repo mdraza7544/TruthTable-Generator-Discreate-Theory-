@@ -1,0 +1,122 @@
+
+
+### Simple Expressions:
+```
+p&q
+p|q
+!p
+p->q
+p<->q
+```
+
+### Compound Expressions:
+```
+(p&q)|r
+(p|q)&r
+!p|q
+!(p&q)
+(p->q)&(q->r)
+```
+
+## **🔥 Intermediate Level (Tautologies & Contradictions):**
+
+### Famous Tautologies:
+```
+p|!p                          (Law of Excluded Middle)
+!(p&!p)                       (Law of Non-Contradiction)
+(p->q)<->(!q->!p)            (Contrapositive)
+((p->q)&p)->q                 (Modus Ponens)
+((p->q)&!q)->!p              (Modus Tollens)
+(p->(q->r))<->((p&q)->r)     (Exportation)
+```
+
+### Contradictions:
+```
+p&!p
+(p|q)&!p&!q
+```
+
+## **⚡ Advanced Level (4+ variables):**
+
+### Complex Logic:
+```
+(p&q)->(r|s)
+((p->q)&(r->s)&(p|r))->(q|s)
+(p&q&r)|(!p&!q&!r)
+(p<->q)&(q<->r)->(p<->r)
+```
+
+### De Morgan's Laws (Tautologies):
+```
+!(p&q)<->(!p|!q)
+!(p|q)<->(!p&!q)
+```
+
+## **🎓 Challenge Level:**
+
+### Logical Equivalences:
+```
+(p->q)<->(!p|q)               (Implication Equivalence)
+(p&(q|r))<->((p&q)|(p&r))    (Distributive Law)
+(p|(q&r))<->((p|q)&(p|r))    (Distributive Law)
+```
+
+### Complex Tautology (Hypothetical Syllogism):
+```
+((p->q)&(q->r))->(p->r)
+```
+
+### 5-Variable Expression:
+```
+((a&b)|(c&d))->e
+(a->b)&(b->c)&(c->d)&(d->e)->(a->e)
+```
+
+## **🧪 Test These Step-by-Step:**
+
+### **Start Simple:**
+1. `p&q` - See basic AND operation
+2. `p|q` - See basic OR operation
+3. `!p` - See negation
+
+### **Try Tautologies:**
+1. `p|!p` - Should show all TRUE (Tautology ✓)
+2. `p&!p` - Should show all FALSE (Contradiction ✗)
+
+### **Test Implication:**
+1. `p->q` - Classic implication
+2. `(p->q)<->(!p|q)` - Should be a tautology!
+
+### **Complex Expression:**
+1. `((p->q)&(q->r))->(p->r)` - Transitivity (Tautology)
+
+## **💡 Real-World Examples:**
+
+### **If-Then Scenarios:**
+```
+(rain->wet)&rain->wet         (If it rains, ground is wet)
+(study->pass)&!pass->!study   (Contrapositive)
+```
+
+### **Logic Puzzles:**
+```
+(a|b)&!(a&b)                  (Exclusive OR)
+(p&q)|(!p&!q)                 (Both true or both false)
+```
+
+## **🎯 My Top 5 Recommendations to Try First:**
+
+1. **`p|!p`** - Classic tautology, easy to verify
+2. **`(p->q)<->(!p|q)`** - Shows implication equivalence (tautology)
+3. **`((p->q)&p)->q`** - Modus Ponens (tautology)
+4. **`(p&q)->r`** - 3-variable truth table (8 rows)
+5. **`((p->q)&(q->r))->(p->r)`** - Hypothetical syllogism (tautology)
+
+## **🚀 Quick Test Sequence:**
+
+```
+1. p&q              → See 4 rows (2 variables)
+2. (p|q)->r         → See 8 rows (3 variables)
+3. p|!p             → Tautology detected!
+4. p&!p             → Contradiction detected!
+5. (p->q)<->(!q->!p) → Tautology (contrapositive law)

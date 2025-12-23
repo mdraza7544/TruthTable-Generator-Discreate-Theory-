@@ -54,15 +54,54 @@ Complex:
 
 
 Project Structure
-src/main/java/com/truthtable/
-├── Main.java
-├── model/          # Data structures (Expression, Variable, TruthTable)
-├── parser/         # Tokenization and parsing
-├── evaluator/      # Expression evaluation
-├── generator/      # Truth table generation
-├── validator/      # Input validation
-├── display/        # Output formatting
-└── exception/      # Custom exceptions
+sample/
+│
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── truthtable/
+│                   │
+│                   ├── Main.java
+│                   │
+│                   ├── model/                                   # Data structures (Expression, Variable, TruthTable)
+│                   │   ├── Expression.java
+│                   │   ├── Variable.java
+│                   │   ├── TruthTable.java
+│                   │   └── TruthTableRow.java
+│                   │
+│                   ├── parser/                                  # Tokenization and parsing
+│                   │   ├── TokenType.java
+│                   │   ├── Token.java
+│                   │   ├── Tokenizer.java
+│                   │   └── ExpressionParser.java
+│                   │
+│                   ├── evaluator/                               # Expression evaluation
+│                   │   ├── LogicalOperator.java
+│                   │   ├── OperatorHandler.java
+│                   │   └── ExpressionEvaluator.java
+│                   │
+│                   ├── generator/                               # Truth table generation
+│                   │   ├── CombinationGenerator.java
+│                   │   ├── TautologyChecker.java
+│                   │   └── TruthTableGenerator.java
+│                   │
+│                   ├── validator/                               # Input validation
+│                   │   ├── SyntaxValidator.java
+│                   │   └── ExpressionValidator.java
+│                   │
+│                   ├── display/                                 # Output formatting
+│                   │   ├── TableFormatter.java
+│                   │   ├── ConsoleDisplay.java
+│                   │   └── HTMLExporter.java
+│                   │
+│                   └── exception/                               # Custom exceptions
+│                       ├── InvalidExpressionException.java
+│                       ├── ParsingException.java
+│                       └── EvaluationException.java
+│
+└── README.md
+    
 
 
 Algorithm
@@ -92,3 +131,4 @@ Future Enhancements
 
 Author
 Md Ashif Raza
+
